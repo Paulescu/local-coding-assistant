@@ -58,15 +58,8 @@ class OllamaLLM(LLM):
             model=self.model_name,
             messages=self.messages,
             stream=False,
-            # system=self.system_prompt,
         )
         response: str = response.message.content
-
-        # response = self.client.chat.completions.create(
-        #     model=self.model_name,
-        #     messages=self.messages,
-        # )
-        # response: str = response.choices[0].message.content
 
         # add the response to the conversation history
         self.messages.append(

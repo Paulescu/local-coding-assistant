@@ -1,4 +1,5 @@
-from .base import LLM, LLMFactory, LLMProviderType
+from .base import LLM, LLMProviderType
+from .factory import LLMFactory
 
 __all__ = [
     'LLM',

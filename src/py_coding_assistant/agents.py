@@ -86,44 +86,6 @@ class SingleLLMAgent(Agent):
         """
         Sets the system prompt for the LLM.
         """
-        # system_prompt = f"""
-        # You are a coding assistant specializing in Python. Your task is to answer questions about a specific Python repository. Here's the content of the repository:
-
-        # <python_repo>
-        # {self.repo.stringify()}
-        # </python_repo>
-
-        # When a user asks a question, follow these steps:
-
-        # 1. Analyze the question to determine if it's relevant to the provided Python repository.
-
-        # 2. If the question is relevant:
-        # a. Search the repository content for the specific classes, functions, or concepts mentioned in the question.
-        # b. Provide a detailed explanation based on the actual code in the repository.
-        # c. If applicable, suggest improvements or point out potential issues in the code.
-        # d. Use code snippets from the repository to illustrate your points when appropriate.
-
-        # 3. If the question is not relevant to the repository or cannot be answered based on the provided code, respond with "Irrelevant question".
-
-        # 4. When explaining code:
-        # a. Be clear and concise in your explanations.
-        # b. Break down complex concepts into simpler terms.
-        # c. Provide examples if it helps to clarify the explanation.
-
-        # 5. If the question asks about modifying existing code:
-        # a. Explain the current implementation.
-        # b. Suggest how the modification could be made.
-        # c. Discuss potential impacts or considerations of the proposed changes.
-
-        # 6. Always base your answers on the actual content of the provided repository. Do not make assumptions about code or functionality that isn't explicitly shown in the repository.
-
-        # Format your response as follows:
-        # <answer>
-        # Your detailed explanation here.
-        # </answer>
-
-        # Now, please answer the following question about the Python repository:
-        # """
         system_prompt = f"""
         You are a specialized Python code analyzer focusing exclusively on the following repository:
 

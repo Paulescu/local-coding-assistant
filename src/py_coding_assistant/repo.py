@@ -2,6 +2,8 @@ import random
 from pathlib import Path
 from typing import Optional
 
+from gitingest import ingest
+
 
 class Repo:
     def __init__(self, path: str):
@@ -28,11 +30,7 @@ class Repo:
         Returns a string representation of the repo.
         """
         # return "\n".join(self.files.values())
-
-        from gitingest import ingest
-
         summary, tree, content = ingest(str(self.path))
-        # breakpoint()
 
         return content
 
