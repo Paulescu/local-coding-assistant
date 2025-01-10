@@ -93,7 +93,7 @@ It will be LIVE, meaning you and me will build from 0 to 1 a real world ML produ
 - RAG
 - Agents
 
-No more cranky Langchain demos.
+No more clanky Langchain demos.
 Only things that work (and companies need) in the real world.
 
 Subscribe to my newsletter to get notified when the course is ready.
