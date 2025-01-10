@@ -1,0 +1,17 @@
+line-length = 88
+lint.select = [
+    "C",  # mccabe rules
+    "F",  # pyflakes rules
+    "E",  # pycodestyle error rules
+    "W",  # pycodestyle warning rules
+    "B",  # flake8-bugbear rules
+    "I",  # isort rules
+]
+lint.ignore = [
+    "C901",  # max-complexity-10
+    "E501",  # line-too-long
+]
+
+[format]
+indent-style = "space"
+quote-style = "single"

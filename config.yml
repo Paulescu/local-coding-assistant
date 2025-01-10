@@ -1,0 +1,3 @@
+llm_provider: ollama
+llm_model: qwen2.5-instruct
+
