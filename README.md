@@ -1,6 +1,6 @@
-## Let's build a coding assistant with LLMs
+# Let's build a coding assistant with LLMs
 
-### The problem
+## The problem
 Coding assistants like Github Copilot or Cursor are great. However, they have one small problem:
 
 As you use them, your source code and any data embedded in it is constantly sent to the LLM provider. Which ultimately means that your data becomes THEIR training data.
@@ -13,7 +13,7 @@ The question is, how to do that?
 
 In this repo you can find a solution to this problem. It's a Python package that allows you to build your own coding assistant, without sharing your data with the LLM provider.
 
-### The solution
+## The solution
 
 The building blocks:
 
@@ -42,7 +42,7 @@ In this case, it probably makes sense to use a multi-agent system, where each ag
 
 We will explore this in a future post.
 
-### How to use this assistant?
+## How to use this assistant?
 
 You first need to install
 - [Ollama](https://ollama.com/download) on your machine.
