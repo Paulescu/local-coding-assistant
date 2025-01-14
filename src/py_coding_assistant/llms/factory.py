@@ -1,4 +1,3 @@
-from .anthropic import AnthropicLLM
 from .base import LLM, LLMProviderType
 from .dummy import DummyLLM
 from .ollama import OllamaLLM
@@ -18,7 +17,5 @@ class LLMFactory:
             return OllamaLLM(llm_model)
         elif llm_provider == LLMProviderType.DUMMY:
             return DummyLLM()
-        elif llm_provider == LLMProviderType.ANTHROPIC:
-            return AnthropicLLM(llm_model)
         else:
             raise ValueError(f'Invalid LLM provider: {llm_provider}')
