@@ -18,6 +18,9 @@ cli-with-claude:
 		--llm-provider anthropic \
 		--llm-model claude-3-5-sonnet-20241022
 
+ui:
+	uv run python -m src.py_coding_assistant.ui
+
 lint:
 	ruff check .
 

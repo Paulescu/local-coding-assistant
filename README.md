@@ -99,3 +99,6 @@ Only things that work (and companies need) in the real world.
 Subscribe to my newsletter to get notified when the course is ready.
 
 [>>> 🔔 Subscribe NOW 🔔 <<<](https://paulabartabajo.substack.com/)
+
+## References
+https://simonwillison.net/2024/Sep/2/anatomy-of-a-textual-user-interface/

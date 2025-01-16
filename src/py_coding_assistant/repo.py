@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Optional
 
 from gitingest import ingest
+from loguru import logger
 
 
 class Repo:
@@ -31,6 +32,9 @@ class Repo:
         """
         # return "\n".join(self.files.values())
         summary, tree, content = ingest(str(self.path))
+
+        logger.debug(f'Summary: {summary}')
+        logger.debug(f'Tree: {tree}')
 
         return content
 
